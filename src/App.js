@@ -1,18 +1,13 @@
-import './App.css';
-
-import Main from './components/Main/Main';
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
+import Main from './components/Main/Main';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Main/>
-      <button className="btn btn-primary"></button>
     </div>
   );
 }
 
-export default App
+export default App;
