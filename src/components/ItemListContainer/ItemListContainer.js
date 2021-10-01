@@ -1,5 +1,13 @@
 import React from "react";
 import Item from "../Item/Item";
+import img1 from '.src/img/img1.png';
+import img2 from '.src/img/img2.png';
+import img3 from '.src/img/img3.png';
+import img4 from '.src/img/img4.png';
+import img5 from '.src/img/img5.png';
+import img6 from '.src/img/img6.png';
+import img7 from '.src/img/img7.png';
+import img8 from '.src/img/img8.png';
 
 const ItemListContainer = ({addToCardWidget}) => {
 
@@ -7,14 +15,14 @@ const ItemListContainer = ({addToCardWidget}) => {
 
     const items = [
     
-        { id : 0 , nombre :"salchipapa", stock:5, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 1 , nombre :"hamburgesa", stock:4, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 2 , nombre :"pizza",      stock:1, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 3 , nombre :"salchipapa", stock:10, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 4 , nombre :"salchipapa", stock:20, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 5 , nombre :"salchipapa", stock:30, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 6 , nombre :"salchipapa", stock:3, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"},
-        { id : 7 , nombre :"salchipapa", stock:6, img :"https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"}
+        { id : 0 , nombre :"Monitores", stock:5, img: <img src={img1} />},
+        { id : 1 , nombre :"Teclados", stock:4, img: <img src={img2} />},
+        { id : 2 , nombre :"Auriculares", stock:1, img: <img src={img3} />},
+        { id : 3 , nombre :"Mouse", stock:10, img: <img src={img4} />},
+        { id : 4 , nombre :"Gabinetes", stock:20, img: <img src={img5} />},
+        { id : 5 , nombre :"Memoria Ram", stock:30, img: <img src={img6} />},
+        { id : 6 , nombre :"Motherboard", stock:3, img: <img src={img7} />},
+        { id : 7 , nombre :"Placa de Video", stock:6, img: <img src={img8} />},
     
     ]
   return (
