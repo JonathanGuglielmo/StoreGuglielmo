@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Navbar from '../NavBar/NavBar'
+import ItemCount from '../ItemCount/ItemCount';
 // Si lo vas a querer usar recorda descomentar lo ))
 //import CantidadClick from '../Clicks/CantidadClick'
 
@@ -24,7 +25,7 @@ const Main = () => {
         setCarrito(carrito + articles)
     }
 
-    // un Effect que tira console.log cada vez que carrito se cambia
+    // tira console.log cada vez que carrito se cambia
     useEffect(() => {
        console.log("se agrego un item")
     }, [carrito])
@@ -32,8 +33,7 @@ const Main = () => {
     return (
         <div className="container-fluid p-2">
             <Navbar
-            // Es la funcion Toggle declarado en la linea 17 estoy llevando al componente Navbar
-            // Se va a encargar de manipular el estado del state "open" 
+
             toggleMenu={toggleMenu}
             //es el state que controla cuantos articulos tengo actualmente en el carrito
             carrito={carrito} 
@@ -45,6 +45,7 @@ const Main = () => {
                       /> }
             {/* Este componente cuenta los clicks */}
             {/* <CantidadClick/> */}
+            <ItemCount/>
         </div>
     )
 }
