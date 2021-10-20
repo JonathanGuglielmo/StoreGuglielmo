@@ -1,13 +1,14 @@
 import React from "react";
 import './NavBar.css';
+import logo from '../../img/logo.png';
+
 
 const NavBar = () => {
-
-
 
     return (
         <div>
             <nav>
+                <img src={logo} width="300" className="logo" alt="logo shark store" />
                 <ul>
                     <li><a href="#home">Home</a></li>                        
                     <li><a href="#shop">Shop</a></li>                        

@@ -26,7 +26,8 @@ const ItemListContainer = ({addToCardWidget}) => {
     
     ]
   return (
-    <div className="container p-3 my-5">
+    <div className="row">
+    <div className="col-sm-6">
 
         {/* aqui estoy recorriendo el array y estoy generando <Item/> "componente" dinamicamente ! */}
         
@@ -40,6 +41,7 @@ const ItemListContainer = ({addToCardWidget}) => {
               /> ) 
             
             ))}
+    </div>
     </div>
   );
 };

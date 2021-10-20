@@ -27,8 +27,8 @@ const Item = ({ nombre, stock, img, addToCardWidget }) => {
   }
 
   return (
-    <div className="row my-5">
-      <div className="col-sm-12 col-xs-12 col-md-8 col-lg-5 col-xl-4">
+    <div className="row  d-flex my-5">
+      <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
         <div className="card">
           <img src={img} className="card-img-top" alt="..." />
           <div className="card-body">
