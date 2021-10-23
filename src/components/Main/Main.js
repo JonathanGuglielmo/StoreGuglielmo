@@ -2,8 +2,7 @@ import React, { useState,useEffect } from 'react'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Navbar from '../NavBar/NavBar'
 import ItemCount from '../ItemCount/ItemCount';
-// Si lo vas a querer usar recorda descomentar lo ))
-//import CantidadClick from '../Clicks/CantidadClick'
+// import CantidadClick from '../Clicks/CantidadClick'
 
 const Main = () => {
 
