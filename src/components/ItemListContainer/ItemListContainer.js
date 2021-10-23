@@ -13,6 +13,8 @@ const ItemListContainer = ({addToCardWidget}) => {
 
   // addToCardWidget => es la funcion que traje desde main para parasar al <Item/>
 
+
+
     const items = [
     
         { id : 0 , nombre :"Monitores", stock:5, img: img1},
@@ -30,8 +32,8 @@ const ItemListContainer = ({addToCardWidget}) => {
     <div className="col-sm-6">
 
         {/* aqui estoy recorriendo el array y estoy generando <Item/> "componente" dinamicamente ! */}
-        
-        {items.map((item => 
+
+        {items && items.map((item => 
             ( <Item 
                 key={item.id} 
                 nombre={item.nombre}
