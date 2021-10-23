@@ -1,9 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Navbar from '../NavBar/NavBar'
-import ItemCount from '../ItemCount/ItemCount';
+// import ItemCount from '../ItemCount/ItemCount';
 // import CantidadClick from '../Clicks/CantidadClick';
-import Probando from '../ui/Probando';
+// import Probando from '../ui/Probando';
 
 const Main = () => {
 
@@ -27,7 +27,7 @@ const Main = () => {
 
     // tira console.log cada vez que carrito se cambia
     useEffect(() => {
-       console.log("se agrego un item")
+        console.log("se agrego un item")
     }, [items])
 
     const tarea = new Promise((resolve, reject) =>{
@@ -48,13 +48,11 @@ const Main = () => {
             {/* Esto son la lista de los articulos , recuerda que depende de la condicion "open" para mostrar o ocultar se */}
             {open && <ItemListContainer
                        // este funcion addToCardWidget esta declarado en la linea 23 y lo estoy llevando al Item.js para utilizar lo 
-                      addToCardWidget={addToCardWidget} 
-                      /> }
+                    addToCardWidget={addToCardWidget} 
+                    /> }
             {/* Este componente cuenta los clicks */}
             {/* <CantidadClick/> */}
             <ItemListContainer setItems={setItems}/>
-            <Probando/>
-            <ItemCount/>
         </div>
     )
 }

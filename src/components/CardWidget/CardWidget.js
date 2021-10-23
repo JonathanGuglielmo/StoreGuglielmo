@@ -9,6 +9,7 @@ const CardWidget = ({items,toggleMenu}) => {
         <div className=" d-flex align-items-center">
          <ShoppingCartIcon style={{width:"50px", color:"brown"}} fontSize="large"/> 
             <h1 className="text-light mr-5">{items}</h1>
+            <button className="btn mx-5 btn-secondary" onClick={ ()=> toggleMenu()}>Mostrar/Ocultar</button>
         </div>
     )
 }
