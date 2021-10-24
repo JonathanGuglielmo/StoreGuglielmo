@@ -31,18 +31,19 @@ const ItemListContainer = ({addToCardWidget}) => {
 
     const getItems = new Promise ((resolve,reject) => {
 
-      const estadoDePromesa = false;
+      // const estadoDePromesa = false;
       
       setTimeout(() => {
-        if(estadoDePromesa){
+        // if(estadoDePromesa){
         resolve(items);
-      } else {
-        reject('no se pudo conectar con el servidor')
-      }
+      // } else {
+      //   reject('no se pudo conectar con el servidor')
+      // }
       },2000);
     });
 
-    getItems.then((resp) => console.log(resp));
+    getItems.then((resp) => console.log(resp))
+    .catch( err => console.log(err));
 
   return (
     <div className="row">
