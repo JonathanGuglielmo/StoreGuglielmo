@@ -9,6 +9,7 @@ import img6 from '../../img/img6.png';
 import img7 from '../../img/img7.png';
 import img8 from '../../img/img8.png';
 
+
 const ItemListContainer = ({addToCardWidget}) => {
 
   // addToCardWidget => es la funcion que traje desde main para parasar al <Item/>
@@ -27,6 +28,22 @@ const ItemListContainer = ({addToCardWidget}) => {
         { id : 7 , nombre :"Placa de Video", stock:6, img: img8},
     
     ]
+
+    const getItems = new Promise ((resolve,reject) => {
+
+      const estadoDePromesa = false;
+      
+      setTimeout(() => {
+        if(estadoDePromesa){
+        resolve(items);
+      } else {
+        reject('no se pudo conectar con el servidor')
+      }
+      },2000);
+    });
+
+    getItems.then((resp) => console.log(resp));
+
   return (
     <div className="row">
     <div className="col-sm-6">
